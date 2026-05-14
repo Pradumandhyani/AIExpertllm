@@ -27,6 +27,7 @@ def player_choice():
     else:
         return ('O', 'X')
 
+
 def player_move(board, symbol):
     move = -1
     while move not in range(1, 10) or not board[move - 1].isdigit():
@@ -37,6 +38,7 @@ def player_move(board, symbol):
         except ValueError:
             print("Please enter a number between 1 and 9.")
     board[move - 1] = symbol
+
 
 def ai_move(board, ai_symbol, player_symbol):
     for i in range(9):
@@ -57,6 +59,7 @@ def ai_move(board, ai_symbol, player_symbol):
     move = random.choice(possible_moves)
     board[move] = ai_symbol
 
+
 def check_win(board, symbol):
     win_conditions = [
         (0, 1, 2), (3, 4, 5), (6, 7, 8), # Horizontal
@@ -68,8 +71,10 @@ def check_win(board, symbol):
             return True
     return False
 
+
 def check_full(board):
     return all(not spot.isdigit() for spot in board)
+
 
 def tic_tac_toe():
     print("Welcome to Tic-Tac-Toe!")
