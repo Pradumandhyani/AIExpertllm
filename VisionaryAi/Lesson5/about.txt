@@ -1,0 +1,24 @@
+Image filtering is the process of modifying an image by applying a
+ mathematical operation (called a filter or kernel) to improve its 
+ appearance, extract useful information, or create special visual effects.
+
+In simple words:
+
+Image filtering means changing the pixels of an image to achieve a desired result.
+
+For example, you can:
+
+Make an image brighter or darker.
+Blur an image.
+Sharpen details.
+Detect edges.
+Remove noise.
+Change colors (red, blue, green tint).
+Real-Life Example
+
+Imagine you're looking at a photograph.
+
+If you wear red sunglasses, everything appears reddish.
+If you wear blue sunglasses, everything appears bluish.
+If you clean a blurry camera lens, the picture becomes sharper.
+

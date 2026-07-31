@@ -1,3 +1,5 @@
+
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,7 +15,10 @@ def display_image(title, image):
     plt.axis('off')
     plt.show()
 
-def interactive_edge_detection(image_path):
+def interactive_edge_detection():
+    image_path = r"D:\Codingal\AIExpertllm\VisionaryAi\Lesson3\abc.png"
+    # User-provided image path
+   
     """Interactive activity for edge detection and filtering."""
     image = cv2.imread(image_path)
     if image is None:
@@ -77,5 +82,4 @@ def interactive_edge_detection(image_path):
         else:
             print("Invalid choice. Please select a number between 1 and 6.")
 
-# Provide the path to an image for the activity
-interactive_edge_detection('example.jpg')
+interactive_edge_detection()

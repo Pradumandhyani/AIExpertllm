@@ -81,7 +81,8 @@ def tic_tac_toe():
     player_name = input(Fore.GREEN + "Enter your name: " + Style.RESET_ALL)
     while True:
         board = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
-        player_symbol, ai_symbol = player_choice()
+        player_symbol, ai_symbol = player_choice() 
+        # player_symbol='x'
         turn = 'Player'
         game_on = True
 
